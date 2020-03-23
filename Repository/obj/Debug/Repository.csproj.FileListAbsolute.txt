@@ -1,0 +1,12 @@
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\bin\Debug\Repository.dll.config
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\bin\Debug\Repository.dll
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\bin\Debug\Repository.pdb
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\bin\Debug\EntityFramework.dll
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\bin\Debug\EntityFramework.xml
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\obj\Debug\Repository.dll
+C:\Users\360Imprimir\source\repos\BlogApp\Repository\obj\Debug\Repository.pdb

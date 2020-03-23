@@ -1,0 +1,15 @@
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csprojAssemblyReference.cache
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\BlogApp.Data.dll
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\BlogApp.Data.pdb
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.dll
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.pdb
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\BlogApp.Data.dll.config
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.dll
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\Repository.dll
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\Repository.pdb
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\Repository.dll.config
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.xml
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\360Imprimir\source\repos\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CopyComplete

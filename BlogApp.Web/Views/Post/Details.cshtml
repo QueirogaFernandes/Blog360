@@ -1,0 +1,96 @@
+﻿@model BlogApp.Data.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+    var imgSrc = "";
+    if (Model.Image != null)
+    {
+        var base64 = Convert.ToBase64String(Model.Image);
+        imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+    }
+
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Keywords)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Keywords)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorUserName)
+        </dd>
+
+    </dl>
+    @if(Model.Image != null){
+        <img src="@imgSrc" />
+    }
+    
+</div>
+
+@foreach (var item in Model.Comments)
+{
+<dl>
+
+    <dt>
+        @Html.DisplayNameFor(modelItem => item.Content)
+    </dt>
+    <dd>
+        @Html.DisplayFor(modelItem => item.Content)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(modelItem => item.Date)
+    </dt>
+    <dd>
+        @Html.DisplayFor(modelItem => item.Date)
+    </dd>
+    @if (Session["Role"] != null && Session["Role"].Equals("Admin") || (int)Session["Id"] == item.Author_Id)
+    {
+        <dd>@Html.ActionLink("Delete", "DeleteComment", new { commentId = item.Id })</dd>
+    }
+</dl>
+
+    
+}
+
+<li>@Html.ActionLink("Add a Comment", "CreateComment", new { @postId = Model.Id })</li>
+<p>
+    @Html.ActionLink("Back to List of Posts", "Index")
+</p>
