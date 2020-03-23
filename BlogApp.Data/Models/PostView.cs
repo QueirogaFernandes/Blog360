@@ -15,6 +15,7 @@ namespace BlogApp.Data.Models
         public string Keywords { get; set; }
         public byte[] Image { get; set; }
         public HttpPostedFile Image2 { get; set; }
+        public string ImageFolderPath { get; set; }
         [Required]
         public string Content { get; set; }
         public int Id { get; set; }

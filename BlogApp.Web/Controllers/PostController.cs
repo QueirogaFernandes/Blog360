@@ -114,8 +114,12 @@ namespace BlogApp.Web.Controllers
                 HttpPostedFileBase file = Request.Files["ImageData"];
                 if( file != null)
                 {
+                    string fileName = System.IO.Path.GetFileName(file.FileName);
+                    string filePath = "~/Images/" + fileName;
+                    file.SaveAs(Server.MapPath(filePath));
                     BinaryReader reader = new BinaryReader(file.InputStream);
                     post.Image = reader.ReadBytes((int) file.ContentLength);
+                    post.ImageFolderPath = filePath;
                 }
                 var userId = (int) Session["Id"];
                 postService.Add(post, userId);

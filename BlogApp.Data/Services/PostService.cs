@@ -31,6 +31,7 @@ namespace BlogApp.Data.Services
                 post.Title = postView.Title;
                 post.Keywords = postView.Keywords;
                 post.Image = postView.Image;
+                post.ImageFolderPath = postView.ImageFolderPath;
                 post.Content = postView.Content;
                 post.Author_Id = user.Id;
                 db.Posts.Add(post);

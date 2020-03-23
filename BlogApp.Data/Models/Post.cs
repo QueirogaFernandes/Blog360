@@ -16,6 +16,7 @@ namespace BlogApp.Data.Models
         public virtual User Author { get; set; }
         public string Keywords { get; set; }
         public byte[] Image { get; set; }
+        public string ImageFolderPath { get; set; }
         [Required]
         public string Content { get; set; }
         [Required]
