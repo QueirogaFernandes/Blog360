@@ -24,7 +24,7 @@ namespace BlogApp.Data.Services
         // Todos ?
         Post GetById(int id);
         // Todos
-        void Add(PostView post, int userId);
+        Post Add(PostView post, int userId);
         // Admin ou...
         void Update(Post post, int userId);
         bool Delete(int id, int userId);

@@ -18,7 +18,7 @@ namespace BlogApp.Data.Services
             this.db = db;
             this.userService = userService;
         }
-        public void Add(PostView postView, int userId)
+        public Post Add(PostView postView, int userId)
         {
             var user = userService.GetById(userId);
 
@@ -36,7 +36,12 @@ namespace BlogApp.Data.Services
                 post.Author_Id = user.Id;
                 db.Posts.Add(post);
                 db.SaveChanges();
+                var id = post.Id;
+
+
+
             }
+            return post;
         }
 
         public bool Approve(int postId, int userId)

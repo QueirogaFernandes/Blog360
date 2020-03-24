@@ -112,22 +112,23 @@ namespace BlogApp.Web.Controllers
             if (ModelState.IsValid)
             {
                 HttpPostedFileBase file = Request.Files["ImageData"];
-                if( file != null)
+                var userId = (int) Session["Id"];
+                Post createdPost = postService.Add(post, userId);
+                if (file != null)
                 {
                     Random rnd = new Random();
                     string fileName = System.IO.Path.GetFileName(file.FileName);
                     int randomNumber = rnd.Next(1, 1000);
-                    string filePath = "~/Images/" + randomNumber +  fileName;
+                    string filePath = $"~/Images/{createdPost.Id}{randomNumber}{fileName}";
                     file.SaveAs(Server.MapPath(filePath));
 
 
                     BinaryReader reader = new BinaryReader(file.InputStream);
-                    post.Image = reader.ReadBytes((int) file.ContentLength);
-                    post.ImageFolderPath = filePath;
-                    post.Image2 = file;
+                    createdPost.Image = reader.ReadBytes((int)file.ContentLength);
+                    createdPost.ImageFolderPath = filePath;
+                    postService.Update(createdPost, userId);
+                    
                 }
-                var userId = (int) Session["Id"];
-                postService.Add(post, userId);
                 return RedirectToAction("Index");
             }
 
